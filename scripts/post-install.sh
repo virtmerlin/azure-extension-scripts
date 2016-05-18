@@ -3,8 +3,8 @@
 set -e
 
 echo "Getting unzip, git, & npm packages..."
-apt-get -y install git unzip
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+apt-get -y update
 apt-get -y install git unzip nodejs
 
 echo "Installing CF cli..."
