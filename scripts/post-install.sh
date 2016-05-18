@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-apt-get install git unzip
+apt-get -y install git unzip
