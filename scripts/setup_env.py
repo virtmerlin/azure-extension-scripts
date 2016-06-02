@@ -30,7 +30,8 @@ def prepare_storage(settings):
     blob_service = AppendBlobService(account_name=sec_storage_account_name, account_key=sec_storage_access_key, endpoint_suffix=endpoint_suffix)
     blob_service.create_container('bosh')
     blob_service.create_container(
-    container_name='stemcell'
+        container_name='stemcell'
+        public_access='blob'
     )
 
     # Prepare the table for storing meta datas of storage account and stemcells
